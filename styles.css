@@ -850,6 +850,14 @@ body.fullscreen-active #video-player,
     left: calc(var(--channel-list-width, 300px) * 1);
 }
 
+.sidebar-toggle.open::before {
+    content: '❮';
+}
+
+.sidebar-toggle::before {
+    content: '❯';
+}
+
 @media (max-width: 768px) and (orientation: portrait) {
     :root {
         --channel-list-width: 80vw; /* default for portrait is 80% */
